@@ -3,8 +3,8 @@ import { HttpClient} from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
 
-// @Injectable()
-// export class ProfileService {
+@Injectable()
+export class ProfileService {
 
   private username: string;
   private clientid = '456f09e8291362709026';
