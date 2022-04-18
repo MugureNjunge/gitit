@@ -41,7 +41,7 @@ export class ProfileComponent implements OnInit {
   }
 
   findProfile() {
-    this.service.updateProfile(this.username ,string );
+    this.service.updateProfile(ProfileComponent.username);
     this.service.getProfileInfo().subscribe(profile => {
       console.log(profile);
       this; this.profile 

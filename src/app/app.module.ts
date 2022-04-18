@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { AppRoutingModule } from './app-routing.module';
+// import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms'; 
 import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { ProfileComponent } from './profile/profile.component';
+import { ProfileService } from './profile.service';
 
 
 @NgModule({
@@ -15,11 +16,11 @@ import { ProfileComponent } from './profile/profile.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    // AppRoutingModule,
     HttpClientModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [ ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
