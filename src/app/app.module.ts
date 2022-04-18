@@ -2,10 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms'; 
-import { Service }
-
 import { AppComponent } from './app.component';
-// import { ProfileComponent } from './profile/profile.component';
+import { NgModule } from '@angular/core';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -18,7 +17,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ProfileService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
