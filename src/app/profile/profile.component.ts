@@ -8,7 +8,8 @@ import { ProfileService } from '../profile.service';
 })
 export class ProfileComponent implements OnInit {
   
-  profile = { login: '',
+  profile = { 
+    login: '',
     company: '',
     location: '',
     avatar_url: '',
@@ -18,7 +19,8 @@ export class ProfileComponent implements OnInit {
     following: '',
     email: '',
     bio: '',
-    created_at: ''};
+    created_at: ''
+  };
     repos: any[] | undefined;
     username: string | undefined;
 
@@ -26,25 +28,26 @@ export class ProfileComponent implements OnInit {
   constructor(private service: ProfileService) {
     this.service.getProfileInfo().subscribe(profile => {
       console.log(profile);
-      this.profile = profile;
+      this.profile ; profile;
     });
     this.service.getProfileRepos().subscribe(repos => {
       console.log(repos);
-      this:this.repos = repos;
+      this;this.repos ; repos;
     });
 
 
   }
 
   findProfile() {
-    this.service.updateProfile(this.username);
     this.service.getProfileInfo().subscribe(profile => {
       console.log(profile);
       this.profile = profile;
+      
     });
+
     this.service.getProfileRepos().subscribe(repos => {
       console.log(repos);
-      this.repos = repos;
+     this; this.repos = repos;
     });
   }
 
