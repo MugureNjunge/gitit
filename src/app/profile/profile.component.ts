@@ -20,10 +20,11 @@ export class ProfileComponent implements OnInit {
     following: '',
     email: '',
     bio: '',
-    created_at: ''
+    created_at: '',
   };
     repos: any[] | undefined;
     username: string | undefined;
+  static username: any;
 
 
   constructor(private service: ProfileService) {
@@ -40,6 +41,7 @@ export class ProfileComponent implements OnInit {
   }
 
   findProfile() {
+    this.service.updateProfile(this.username ,string );
     this.service.getProfileInfo().subscribe(profile => {
       console.log(profile);
       this; this.profile 
