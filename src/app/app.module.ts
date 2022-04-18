@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { ProfileComponent } from './profile/profile.component';
 import { ProfileService } from './profile.service';
+import { FormComponent } from './form/form.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent
+    ProfileComponent,
+    FormComponent
     
   ],
   imports: [
