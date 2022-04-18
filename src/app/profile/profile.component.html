@@ -31,76 +31,55 @@
 
 <!-- CONTENT SECTION -->
 
+<div class="card">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{ user.name}}</h5>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
 
-<div *ngIf="profile">
-  <div style="margin-top: 10%;" class="panel panel-default">
 
-    <div class="panel-heading">
-      <h1>{{profile.login}}</h1>
-      <span *ngIf="">Works at {{profile.company}}</span> {{profile.location}}
-    </div> -->
+<!-- REPOSITORIES -->
+<div class="card">
+  <div class="card-heading">
+    <h3 class="card-title">Repositories</h3>
 
-    <div class="panel-body">
-
+    <div class="card-body">
       <div class="row">
-        <div class="start">
-          <span class="label label-default">{{profile.public_repos}} Public Repos</span>
-          <span class="label label-primary">{{profile.public_gist}} Public Git</span>
-          <span class="label label-success">{{profile.followers}} Followers</span>
-          <span class="label label-info">{{profile.following}} Following</span>
-          <br> -->
+        <!-- Looop To Display Repos -->
+        <div class="col-md-12">
+          <div *ngFor="let repo of repos">
+            <div class="row">
 
+              <!-- Div To Display Repositories -->
+              <div class="col-md-9">
+                <!-- Repo Name -->
+                <h3>{{repo.name}}</h3>
+                <!-- Repo Description -->
+                <p>{{repo.description}}</p>
+                <!-- View on Github Button -->
 
-          <ul class="list-group">
-            <li class="list-group-item"><strong>Username:</strong> {{profile.login}}</li>
-            <li class="list-group-item"><strong>Member Since:</strong> {{profile.created_at}}</li>
-          </ul>
-
-
-
-        </div>
-      </div>
-
-
-
-      <!-- REPOSITORIES -->
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Repositories</h3>
-        </div>
-        <div class="panel-body">
-          <div class="row">
-            <!-- Looop To Display Repos -->
-            <div class="col-md-12">
-              <div *ngFor="let repo of repos">
-                <div class="row">
-
-                  <!-- Div To Display Repositories -->
-                  <div class="col-md-9">
-                    <!-- Repo Name -->
-                    <h3>{{repo.name}}</h3>
-                    <!-- Repo Description -->
-                    <p>{{repo.description}}</p>
-                    <!-- View on Github Button -->
-
-                    <h4><a href="{{repo.html_url}}" target="_blank">View on github</a></h4>
-                  </div>
-
-                  <div class="col-md-3">
-                    <span class="label label-default">{{repo.watchers}} Stars </span>
-                    <span class="label label-primary">{{repo.forks}} Forks </span>
-                  </div>
-
-                </div>
-                <hr>
+                <h4><a href="{{repo.html_url}}" target="_blank">View on github</a></h4>
               </div>
+
+              <div class="col-md-3">
+                <span class="label label-default">{{repo.watchers}} Stars </span>
+                <span class="label label-primary">{{repo.forks}} Forks </span>
+              </div>
+
             </div>
+            <hr>
           </div>
         </div>
       </div>
-
-
     </div>
-
   </div>
+
+
+</div>
+
+</div>
 </div>
