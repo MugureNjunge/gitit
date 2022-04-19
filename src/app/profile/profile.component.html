@@ -2,13 +2,13 @@
 
 
 
-<ul class="navbar-nav">
+<ul>
   <li>
     <form action="" onsubmit="findProfile()">
       <div class="form-group">
         <input type="text"
-          style="margin-top: 7%;margin-bottom: 7%;  width: 130%; height: 15%;background-color: lightseagreen;text-align: center; border: 20px; color: ghostwhite;"
-          class="form-control header-search-input jump-to-field js-jump-to-field js-site-search-focus  "
+          style="margin-top: 7%;margin-bottom: 2%;  width: 50%; height: 15%;background-color: lightseagreen; border: 10px; color: black;"
+          class="form-control header-search-input jump-to-field js-jump-to-field js-site-search-focus"
           placeholder="type github username here..">
         <input type="submit" name="submit">
       </div>
@@ -17,52 +17,34 @@
 </ul>
 
 
-
-<!-- CONTENT SECTION -->
-
-<!-- <div class="card">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">{{ user.name}}</h5>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div> -->
-
-
 <!-- REPOSITORIES -->
 <div class="card">
-  <div class="card-heading">
-    <h3 class="card-title">Repositories</h3>
-
-    <div class="card-body">
-      <div class="row">
-
-        <div class="col-md-12">
-          <div *ngFor="let repo of repos">
-            <div class="row">
-
-
-              <div class="col-md-9">
-                <h3>{{repo.name}}</h3>
-                <p>{{repo.description}}</p>
-
-                <h4><a href="{{repo.html_url}}" target="_blank">View on github</a></h4>
-              </div>
-
-              <div class="col-md-3">
-                <span class="label label-default">{{repo.watchers}} Stars </span>
-                <span class="label label-primary">{{repo.forks}} Forks </span>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="card-heading c0l-md-4">
+   <br>
+   <br>
+   <br>
+    <h4 class="card-title">Sample link below:</h4>
   </div>
+
+  <div class="card-body">
+    <a href="https://github.com/MugureNjunge">Github Profile</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+  <div class="card-footer">
+    <h4>Copyright 2022</h4>
+    <p>Github, Build Software Better together!</p>
+    <br>
+    <br>
+    <br>
+
+  </div>
+
 
 
 </div>
