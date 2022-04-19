@@ -6,14 +6,21 @@ import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { ProfileComponent } from './profile/profile.component';
 import { ProfileService } from './profile.service';
-import { FormComponent } from './form/form.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ProfilePipe } from './profile.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
-    FormComponent
+    NotfoundComponent,
+    NavbarComponent,
+    ProfilePipe,
+    HighlightDirective,
+  
     
   ],
   imports: [

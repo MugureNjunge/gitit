@@ -1,29 +1,21 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <nav class="navbar navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Hello and welcome to Gitit. You Can Search for Github Users and Repositories
-          down below.</a>
+<!DOCTYPE html>
+
+
+
+<ul class="navbar-nav">
+  <li>
+    <form action="" onsubmit="findProfile()">
+      <div class="form-group">
+        <input type="text"
+          style="margin-top: 7%;margin-bottom: 7%;  width: 130%; height: 15%;background-color: lightseagreen;text-align: center; border: 20px; color: ghostwhite;"
+          class="form-control header-search-input jump-to-field js-jump-to-field js-site-search-focus  "
+          placeholder="type github username here..">
+        <input type="submit" name="submit">
       </div>
-    </nav>
+    </form>
+  </li>
+</ul>
 
-    <ul class="navbar-nav">
-      <li>
-        <form action="" onsubmit="findProfile()">
-          <div class="form-group">
-            <input type="text"
-              style="margin-top: 7%;margin-bottom: 7%;  width: 130%; height: 15%;background-color: lightseagreen;text-align: center; border: 20px; color: ghostwhite;"
-              class="form-control header-search-input jump-to-field js-jump-to-field js-site-search-focus  "
-              placeholder="type username here.." name="username">
-            <input type="submit" name="submit">
-          </div>
-        </form>
-      </li>
-    </ul>
-  </div>
-
-
-</nav>
 
 
 <!-- CONTENT SECTION -->
@@ -46,18 +38,15 @@
 
     <div class="card-body">
       <div class="row">
-        <!-- Looop To Display Repos -->
+
         <div class="col-md-12">
           <div *ngFor="let repo of repos">
             <div class="row">
 
-              <!-- Div To Display Repositories -->
+
               <div class="col-md-9">
-                <!-- Repo Name -->
                 <h3>{{repo.name}}</h3>
-                <!-- Repo Description -->
                 <p>{{repo.description}}</p>
-                <!-- View on Github Button -->
 
                 <h4><a href="{{repo.html_url}}" target="_blank">View on github</a></h4>
               </div>
@@ -68,7 +57,7 @@
               </div>
 
             </div>
-            <hr>
+
           </div>
         </div>
       </div>

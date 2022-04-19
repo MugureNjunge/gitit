@@ -23,8 +23,8 @@ export class ProfileComponent implements OnInit {
     bio: '',
     created_at: '',
   };
-    repos: any[] | undefined;
-    username: string | undefined;
+    repos: any;
+    username: any;
   static username: any;
 
 
@@ -37,7 +37,6 @@ export class ProfileComponent implements OnInit {
       console.log(repos);
       this;this.repos ; repos;
     });
-
 
   }
 
@@ -58,5 +57,6 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
 
   }
+  
 
 }
