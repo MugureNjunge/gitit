@@ -1,10 +1,19 @@
 # Gitit
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+## Written by Mugure Njunge.
+THis application allows users to input github usernames and get full profiles alongside all repositories.
+
+## Development
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.0.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Technologies used
+
+HTML ,Javascript ,Typescript and CSS were used to create this project.
 
 ## Code scaffolding
 
@@ -22,6 +31,13 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
 
-## Further help
+## Bugs
+No known bugs.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Support and contact details
+
+For any corrections or improvements, changes on the code are encouraged. If you encounter any issue, or have feedback on the project, kindly contact the author at maureen.njunge@student.moringaschool.com.
+
+## Copyright (c) {2022} Maureen Njung'e
+
+This project is licensed under the terms of the MIT license.**
